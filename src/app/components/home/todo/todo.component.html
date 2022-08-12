@@ -1,7 +1,7 @@
 <div class="toDoContainer">
     <div class="toDoList">
-        <div *ngFor="let todo of toDoList; let i = index">
-            <p>{{todo.description + ' ' + (todo.done === true ? "✔️" : "❌") }}</p>
+        <div id="Item" *ngFor="let todo of toDoList; let i = index">
+            <p (click)="completeItem(i)">{{todo.description + ' ' + (todo.done === true ? "✔️" : "❌") }}</p>
         </div>
       </div>
   <div id="toDoText">   
