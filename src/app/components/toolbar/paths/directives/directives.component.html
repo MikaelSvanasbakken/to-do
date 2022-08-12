@@ -4,9 +4,18 @@
     <div class="ngClassContainer">
         <h2>Attribute Directive</h2>
         <h3>NgClass</h3>
-    <div class="box" [ngClass]="isClicked ? 'red' : ''">
-    </div>
-    <button (click)="clicked()" pButton pRipple type="button" label="Endre farge" class="p-button-outlined"></button>
+        <div class="box" [ngClass]="isClicked ? 'red' : ''">
+     </div>
+     <button (click)="changeNgClass()" pButton pRipple type="button" label="Endre farge" class="p-button-outlined"></button>
+    
+    
+     <div class="ngStyleContainer">
+        <h3>NgStyle</h3>
+        <h4 [ngStyle]="{'color': ngStyleBool ? 'green' : 'red'}">
+            Hvilken farge er jeg nå? 
+        </h4>
+        <button (click)="changeNgStyle()" pButton pRipple type="button" label="Endre NgStyle" class="p-button-outlined"></button>
+     </div>
 </div>
 
 
@@ -15,6 +24,13 @@
     <h3>NgIf</h3>
     <h4 *ngIf="element"> Hallaisen! 🥷 </h4>
     <button (click)="showElement()" pButton pRipple type="button" label="Trykk her for å vise element" class="p-button-outlined"></button>
+</div>
+
+<div class="ngForContainer">
+    <h2>NgFor</h2>
+    <ul>
+        <li *ngFor="let matretter of mat">{{matretter}}</li>
+    </ul>
 </div>
 </div>
 </div>
