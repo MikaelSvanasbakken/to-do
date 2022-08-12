@@ -1,11 +1,23 @@
 .container {
-    padding: 16px;
+    display: flex;
+    justify-content: center;
+}
+.inputOutputContainer {
+    display: flex;
+    flex-direction: column;
 }
 #buttonSpan {
     display: flex;
-    justify-content: space-between;
-    max-width: 10%;   
+
 }
 #divider {
     color: #131420;
+}
+
+#inc {
+    padding-right: 8px;
+}
+
+#dec {
+padding-left: 8px;
 }

@@ -24,13 +24,15 @@
     <h3>NgIf</h3>
     <h4 *ngIf="element"> Hallaisen! 🥷 </h4>
     <button (click)="showElement()" pButton pRipple type="button" label="Trykk her for å vise element" class="p-button-outlined"></button>
+
+    <div class="ngForContainer">
+        <h2>NgFor</h2>
+        <ul>
+            <li *ngFor="let matretter of mat">{{matretter}}</li>
+        </ul>
+    </div>
 </div>
 
-<div class="ngForContainer">
-    <h2>NgFor</h2>
-    <ul>
-        <li *ngFor="let matretter of mat">{{matretter}}</li>
-    </ul>
-</div>
+
 </div>
 </div>

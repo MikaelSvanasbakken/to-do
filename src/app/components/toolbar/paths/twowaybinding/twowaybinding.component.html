@@ -1,27 +1,46 @@
 <div class="container">
-    <h1>Two-way-binding</h1>
-    {{ person | json }}
-<form #personForm="ngForm">
-<div class="form-group">
-    <label for="person">Person</label>
-    <input type="text" class="form-control" id="name"
-       required
-       [(ngModel)]="person.navn" name="name">
-       <!-- Dette blir brukt bare for å vise verdien-->
-       <div>{{person.navn}}</div>
+  <div class="containerForm">
+  <h1>Two-way-binding</h1>
+  {{ person | json }}
+ 
+    <form #personForm="ngForm">
+      <div class="form-group">
+        <label for="person">Person</label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          required
+          [(ngModel)]="person.navn"
+          name="name"
+        />
+        <!-- Dette blir brukt bare for å vise verdien-->
+        <div>{{ person.navn }}</div>
+      </div>
+      <br />
+      <div class="form-group">
+        <select
+          class="form-control"
+          [(ngModel)]="person.jobb"
+          id="jobb"
+          required
+          name="jobb"
+        >
+          <option *ngFor="let jobb of jobber" [value]="jobb">{{ jobb }}</option>
+        </select>
+      </div>
+      <br />
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control"
+          id="favorittmat"
+          required
+          [(ngModel)]="person.favorittmat"
+          name="favorittmat"
+        />
+        <div>{{ person.favorittmat }}</div>
+      </div>
+    </form>
   </div>
-  <br>
-  <div class="form-group">
-    <select class="form-control" [(ngModel)]="person.jobb" id="jobb" required name="jobb">
-        <option *ngFor="let jobb of jobber" [value]="jobb">{{jobb}}</option>
-      </select>
-  </div>
-  <br>
-  <div class="form-group">
-    <input type="text" class="form-control" id="favorittmat"
-    required
-    [(ngModel)]="person.favorittmat" name="favorittmat">
-    <div>{{person.favorittmat}}</div>
-  </div>
-</form>
 </div>

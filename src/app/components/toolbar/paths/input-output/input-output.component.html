@@ -1,7 +1,10 @@
 <div class="container">
+    <div class="inputOutputContainer">
     <div class="inputContainer">
         <h1>@Input</h1>
-        <span id="buttonSpan"><p-button (click)="inc()">+</p-button> <p-button (click)="dec()">-</p-button></span>
+            
+            <p-button id="inc" (click)="inc()">➕</p-button> 
+            <p-button id="dec" (click)="dec()">➖</p-button>
         <app-display-value [childValue]="parentValue"></app-display-value>
         
     </div>
@@ -15,3 +18,4 @@
         <app-display-output (addItemEvent)="addItemParent($event)"></app-display-output>
     </div>
     </div>
+</div>
