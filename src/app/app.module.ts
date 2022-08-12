@@ -18,7 +18,7 @@ import {MenubarModule} from 'primeng/menubar';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { InputOutputComponent } from './components/toolbar/paths/input-output/input-output.component';
 import { HomeComponent } from './components/home/home.component';
-import { DisplayValueComponent } from './components/toolbar/paths/input-output/display-value/display-value.component';
+import { DisplayInputComponent } from './components/toolbar/paths/input-output/display-input/display-input.component';
 import { DisplayOutputComponent } from './components/toolbar/paths/input-output/display-output/display-output.component';
 import { TwowaybindingComponent } from './components/toolbar/paths/twowaybinding/twowaybinding.component';
 import { PipesComponent } from './components/toolbar/paths/pipes/pipes.component';
@@ -32,7 +32,7 @@ import { DirectivesComponent } from './components/toolbar/paths/directives/direc
     ToolbarComponent,
     InputOutputComponent,
     HomeComponent,
-    DisplayValueComponent,
+    DisplayInputComponent,
     DisplayOutputComponent,
     TwowaybindingComponent,
     PipesComponent,

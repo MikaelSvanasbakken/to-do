@@ -7,6 +7,7 @@
       <div class="form-group">
         <label for="person">Person</label>
         <input
+          pInputText 
           type="text"
           class="form-control"
           id="name"
@@ -14,8 +15,7 @@
           [(ngModel)]="person.navn"
           name="name"
         />
-        <!-- Dette blir brukt bare for å vise verdien-->
-        <div>{{ person.navn }}</div>
+      
       </div>
       <br />
       <div class="form-group">
@@ -32,6 +32,7 @@
       <br />
       <div class="form-group">
         <input
+          pInputText 
           type="text"
           class="form-control"
           id="favorittmat"
@@ -39,7 +40,7 @@
           [(ngModel)]="person.favorittmat"
           name="favorittmat"
         />
-        <div>{{ person.favorittmat }}</div>
+       
       </div>
     </form>
   </div>
