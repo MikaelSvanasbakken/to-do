@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./directives.component.scss']
 })
 export class DirectivesComponent implements OnInit {
-
+  isClicked: boolean = false;
+  element: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  showElement() {
+    this.element = !this.element
+  }
+  clicked() {
+    this.isClicked = !this.isClicked
+    console.log(this.isClicked)
+  }
 }

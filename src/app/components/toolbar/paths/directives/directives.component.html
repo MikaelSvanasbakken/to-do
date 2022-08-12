@@ -1,3 +1,20 @@
 <div class="container">
-    
+   
+    <div class="directiveContainer">
+    <div class="ngClassContainer">
+        <h2>Attribute Directive</h2>
+        <h3>NgClass</h3>
+    <div class="box" [ngClass]="isClicked ? 'red' : ''">
+    </div>
+    <button (click)="clicked()" pButton pRipple type="button" label="Endre farge" class="p-button-outlined"></button>
+</div>
+
+
+<div class="ngIfContainer">
+    <h2>Structural directive</h2>
+    <h3>NgIf</h3>
+    <h4 *ngIf="element"> Hallaisen! 🥷 </h4>
+    <button (click)="showElement()" pButton pRipple type="button" label="Trykk her for å vise element" class="p-button-outlined"></button>
+</div>
+</div>
 </div>
