@@ -1,0 +1,35 @@
+.toDoContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.toDoList {
+    display: flex;
+    flex-direction: column;
+}
+.alternativeTodoContainer {
+    display: flex;
+    align-items: center;
+}
+
+#toDoText {
+    margin-top: 18px;
+    display: flex;
+}
+#toDoInteractive {
+    margin-top: 12px;
+}
+#activityBtn {
+    justify-content: center;
+    display: flex;
+}
+#input {
+    background-color: #131420;
+    height: 32px;
+    padding-left: 8px;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: #20212f;
+    font-family: 'Poppins', sans-serif;
+}
+

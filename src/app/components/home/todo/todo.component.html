@@ -1,0 +1,20 @@
+<div class="toDoContainer">
+    <div class="toDoList">
+        <div *ngFor="let todo of toDoList; let i = index">
+            <p>{{todo.description + ' ' + (todo.done === true ? "✔️" : "❌") }}</p>
+        </div>
+      </div>
+  <div id="toDoText">   
+    <span class="p-input-icon-right">
+      <i (click)="addToList(toDoValue.value)" class="pi pi-arrow-right"></i> 
+    <input id="input" #toDoValue (keyup.enter)="addToList(toDoValue.value)" type="text" [(ngModel)]="todoValue"/>
+    </span>
+  </div>
+
+  <div class="alternativeToDoContainer">
+    <h3>Maybe you don't know and want us to find something for you?</h3>
+    <div id="activityBtn" >
+    <button (click)="grabRandomActivity()" pButton type="button" label="Yes! Find something!"></button>
+  </div>
+  </div>
+</div>

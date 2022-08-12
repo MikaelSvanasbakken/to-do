@@ -1,0 +1,16 @@
+.interactContainer {
+    display: flex;
+    flex-direction: column;
+}
+#addBtn {
+    padding-top: 8px;
+}
+#input {
+    background-color: #131420;
+    height: 32px;
+    padding-left: 8px;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: #20212f;
+    font-family: 'Poppins', sans-serif;
+}

@@ -1,0 +1,9 @@
+.p-toolbar {
+    background: red
+}
+:host ::ng-deep {
+    .p-menubar {
+        background: #212332;
+        
+    }
+}

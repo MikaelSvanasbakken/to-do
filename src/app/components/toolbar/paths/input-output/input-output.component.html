@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="inputContainer">
+        <h1>@Input</h1>
+        <span id="buttonSpan"><p-button (click)="inc()">+</p-button> <p-button (click)="dec()">-</p-button></span>
+        <app-display-value [childValue]="parentValue"></app-display-value>
+        
+    </div>
+    <hr id="divider">
+    <div class="outputcontainer">
+        <h1>@Output</h1>
+        <h3>Verdi hentet fra @Output komponenten: 
+            <li *ngFor="let value of values">{{value}}</li>
+        </h3>
+        <hr id="divider">
+        <app-display-output (addItemEvent)="addItemParent($event)"></app-display-output>
+    </div>
+    </div>

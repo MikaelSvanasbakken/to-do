@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.pipesContainer {
+    display: flex;
+}
+#upperCaseExample{
+    display: flex;
+    flex-direction: row;
+}
+
+#preTransformedText {
+padding-right: 8px;
+}
+
+#transformedText {
+    padding-left: 8px;
+
+}

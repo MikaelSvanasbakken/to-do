@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+
+body, html {
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    background-color: #131415;
+    color: white;
+    background-image: url('./assets/blob-scene-haikei.svg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
