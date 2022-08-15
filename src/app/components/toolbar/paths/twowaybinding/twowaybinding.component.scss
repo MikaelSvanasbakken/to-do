@@ -3,15 +3,56 @@
     justify-content: center;
    
 }
-.containerForm {
+.content {
     display: flex;
     flex-direction: column; 
     width: 33%;
-   
+}
+
+.formContainer {
+ 
 }
 .form-group {
-
     display: flex;
     flex-direction: column;
     max-width: 20%;
 }
+.a {
+    font-size: 1rem;
+color: rgba(255, 255, 255, 0.87);
+background: #040d19;
+padding: 0.75rem 0.75rem;
+border: 1px solid #0b213f;
+border-radius: 6px;
+}
+
+.submitBtn {
+    padding-top: 16px;
+}
+.formBtns {
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column
+}
+
+.ng-valid[required], .ng-valid.required  {
+    border-left: 5px solid #42A948; 
+  }
+  
+  .ng-invalid:not(form)  {
+    border-left: 5px solid #a94442; 
+  }
+  
+
+  // Styling man kan gjøre basert på staten til formen. Veldig snedig.
+  .ng-dirty {}
+
+  .ng-pristine {}
+
+  .ng-valid {}
+
+  .ng-invalid {}
+
+  .ng-touched {}
+
+  .ng-untouched {}

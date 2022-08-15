@@ -38,8 +38,9 @@ export class ToolbarComponent implements OnInit {
         routerLink: 'directives'
       },
       {
-        label: 'Interceptors',
+        label: 'To-do',
         icon: 'pi pi-fw pi-user',
+        routerLink: 'todo'
       },
     ];
   }

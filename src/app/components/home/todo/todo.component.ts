@@ -30,7 +30,7 @@ export class TodoComponent implements OnInit {
   ngOnInit(): void {
   }
   completeItem(index: number) {
-    this.toDoList[index].done = true
+    this.toDoList[index].done = true 
   }
   grabRandomActivity() {
     this.httpClient.fetchActivity().pipe(map(x => this.addToList(x.activity))).subscribe()

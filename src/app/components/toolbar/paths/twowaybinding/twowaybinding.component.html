@@ -1,13 +1,37 @@
 <div class="container">
-  <div class="containerForm">
-  <h1>Two-way-binding</h1>
-  {{ person | json }}
- 
-    <form #personForm="ngForm">
+  <div class="content">
+    <h1>Two-way-binding</h1>
+    {{ person | json }}
+
+    <div [hidden]="!submitted">
+      <h2>Du har submitta:</h2>
+      <div>
+        <h3>{{ person.navn }}</h3>
+      </div>
+      <div>
+        <h3>{{ person.jobb }}</h3>
+      </div>
+      <div>
+        <h3>{{ person.favorittmat }}</h3>
+      </div>
+      <p-button type="button" class="btn btn-primary" (click)="submitted = false">
+        Edit
+      </p-button>
+    </div>
+
+    <h1>Forms med ngModel!</h1>
+    <form class="formContainer" (ngSubmit)="onSubmit()" #personForm="ngForm">
       <div class="form-group">
         <label for="person">Person</label>
+
+        <!-- En kul ting med angular er at man kan sette id'er på inputer slik at man kan enkelt referere til dem
+              De blir kalt for "template reference variable"
+        -->
+
+        <!--Vi seter personName til ngModel fordi det forteller angular hvordan den skal linke referansen til ett direktiv-->
         <input
-          pInputText 
+          #personName="ngModel"
+          pInputText
           type="text"
           class="form-control"
           id="name"
@@ -15,12 +39,18 @@
           [(ngModel)]="person.navn"
           name="name"
         />
-      
+        <div
+          [hidden]="personName.valid || personName.pristine"
+          class="alert alert-danger"
+        >
+          Feltet er ikke fylt ut riktig
+        </div>
       </div>
       <br />
       <div class="form-group">
+        <label for="jobb">Jobb</label>
         <select
-          class="form-control"
+          class="form-control a"
           [(ngModel)]="person.jobb"
           id="jobb"
           required
@@ -31,8 +61,10 @@
       </div>
       <br />
       <div class="form-group">
+        <label for="favorittmat">Favorittmat</label>
         <input
-          pInputText 
+          #foodName="ngModel"
+          pInputText
           type="text"
           class="form-control"
           id="favorittmat"
@@ -40,7 +72,30 @@
           [(ngModel)]="person.favorittmat"
           name="favorittmat"
         />
-       
+        <div
+          [hidden]="foodName.valid || foodName.pristine"
+          class="alert alert-danger"
+        >
+          Feltet er ikke fylt ut riktig
+        </div>
+      </div>
+      <div class="formBtns">
+        <div style="padding-bottom: 8px;">
+          <p-button
+            type="submit"
+            class="btn btn-success"
+            [disabled]="!personForm.form.valid"
+            label="Submit"
+          ></p-button>
+        </div>
+        <div style="padding-top: 8px">
+          <p-button
+            (click)="newPerson(); personForm.reset()"
+            class="btn btn-success"
+            [disabled]="!personForm.form.valid"
+            label="Ny person"
+          ></p-button>
+        </div>
       </div>
     </form>
   </div>

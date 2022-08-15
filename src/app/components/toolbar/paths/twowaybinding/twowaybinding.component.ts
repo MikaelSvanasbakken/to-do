@@ -14,6 +14,10 @@ export class TwowaybindingComponent implements OnInit {
   onSubmit() {
     this.submitted = true; 
   }
+
+  newPerson() {
+    this.person = new Person(42, '', '', '')
+  }
   constructor() { 
     
   }

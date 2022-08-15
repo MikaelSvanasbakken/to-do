@@ -14,6 +14,7 @@ import { ToolbarModule } from 'primeng/toolbar';
 import { ButtonModule } from 'primeng/button';
 import {ListboxModule} from 'primeng/listbox';
 import {MenubarModule} from 'primeng/menubar';
+import {MultiSelectModule} from 'primeng/multiselect';
 
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { InputOutputComponent } from './components/toolbar/paths/input-output/input-output.component';
@@ -44,6 +45,7 @@ import { DirectivesComponent } from './components/toolbar/paths/directives/direc
     AppRoutingModule,
     ButtonModule,
     InputTextModule,
+    MultiSelectModule,
     FormsModule,
     ButtonModule,
     BrowserAnimationsModule,
