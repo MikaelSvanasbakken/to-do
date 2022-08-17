@@ -1,0 +1,18 @@
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+
+}
+
+.gridItem {
+border-style: solid;
+border-color: #212332;
+
+
+}

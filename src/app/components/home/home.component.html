@@ -1,4 +1,11 @@
-<div class="content">
+<div #test class="content">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.18.0/matter.min.js"></script>
 <app-welcome></app-welcome>
+  <div class="gridContainer">
+  <div class="gridItem"*ngFor="let concept of conceptList; let i = index">
+    <app-box  title="{{concept}}"></app-box>
+  </div>
+    <div class="canvas"></div>
 
+  </div>
 </div>

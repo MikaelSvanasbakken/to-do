@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './components/home/welcome/welcome.component';
 import { TodoComponent } from './components/home/todo/todo.component';
+import { BoxComponent } from './components/box/box.component';
 import {InputTextModule} from 'primeng/inputtext';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
@@ -25,6 +26,7 @@ import { TwowaybindingComponent } from './components/toolbar/paths/twowaybinding
 import { PipesComponent } from './components/toolbar/paths/pipes/pipes.component';
 import { DirectivesComponent } from './components/toolbar/paths/directives/directives.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +40,8 @@ import { DirectivesComponent } from './components/toolbar/paths/directives/direc
     TwowaybindingComponent,
     PipesComponent,
     DirectivesComponent,
- 
+    BoxComponent,
+
   ],
   imports: [
     BrowserModule,

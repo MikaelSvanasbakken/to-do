@@ -1,0 +1,17 @@
+.container {
+
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+  background-color: #5b446a;
+ box-shadow: #0b213f;
+}
+
+.boxText {
+  display: flex;
+  align-self: center;
+}
