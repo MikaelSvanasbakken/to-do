@@ -2,15 +2,15 @@
 <div class="pipesContainer">
     <article>
         <h2>Gjøre om til uppercase.</h2>
-        <h3><span>{{</span>lowercasetext | uppercase<span>}}</span></h3>
+        <h3><span>{{</span>lowercasetext | uppercase<span>&#125;&#125;</span></h3>
         <div id="upperCaseExample"><p id="preTransformedText"> jeg er lowercase {{lowercasetext | uppercase}} </p> </div>
 
         <h2>Dette er ett objekt, som jeg gjør om til JSON, via json pipe</h2>
-        <h3><span>{{</span>object | json<span>}}</span></h3>
+        <h3><span>{{</span>object | json<span>&#125;&#125;</span></h3>
         <div>{{object | json}}</div>
 
         <h2>Vi kan også chaine pipes ved å kombinere de to ovenfor.</h2>
-        <h3><span>{{</span>object | json | uppercase<span>}}</span></h3>
+        <h3><span>{{</span>object | json | uppercase<span>&#125;&#125;</span></h3>
         <div>{{object | json | uppercase}}</div>
     </article>
 </div>
