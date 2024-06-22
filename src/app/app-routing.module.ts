@@ -6,6 +6,7 @@ import { DirectivesComponent } from './components/toolbar/paths/directives/direc
 import { InputOutputComponent } from './components/toolbar/paths/input-output/input-output.component';
 import { PipesComponent } from './components/toolbar/paths/pipes/pipes.component';
 import { TwowaybindingComponent } from './components/toolbar/paths/twowaybinding/twowaybinding.component';
+
 const routes: Routes = [
   { path: 'todo', component: TodoComponent },
   { path: 'directives', component: DirectivesComponent },
