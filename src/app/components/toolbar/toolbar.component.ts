@@ -47,6 +47,11 @@ export class ToolbarComponent implements OnInit {
         icon: 'pi pi-fw pi-wifi',
         routerLink: 'signal'
       },
+      {
+        label: 'Observable',
+        icon: 'pi pi-fw pi-eye',
+        routerLink: 'observable'
+      },
     ];
   }
 }
