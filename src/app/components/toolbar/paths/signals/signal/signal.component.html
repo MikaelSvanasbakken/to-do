@@ -1,0 +1,13 @@
+<div>
+  <div>
+    <h1>Ett enkelt eksempel på et signal.</h1>
+    <!-- Signaler er gett'ere - som betyr at du må calle signalet for å hente ut verdien.  -->
+    <h2>{{ count() }}</h2>
+    <button (click)="increment()">Increment</button>
+    <button (click)="decrement()">Decrement</button>
+  </div>
+  <div>
+    <h1>Computed signals - Read-only signaler som henter verdien sin fra andre signaler. </h1>
+    <h2>{{computedCount()}}</h2>
+  </div>
+</div>
