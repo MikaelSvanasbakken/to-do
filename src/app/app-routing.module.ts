@@ -6,6 +6,9 @@ import { DirectivesComponent } from './components/toolbar/paths/directives/direc
 import { InputOutputComponent } from './components/toolbar/paths/input-output/input-output.component';
 import { PipesComponent } from './components/toolbar/paths/pipes/pipes.component';
 import { TwowaybindingComponent } from './components/toolbar/paths/twowaybinding/twowaybinding.component';
+import { SignalComponent } from './components/toolbar/paths/signals/signal/signal.component';
+import { ObservableComponent } from './components/toolbar/paths/observable/observable.component';
+
 
 const routes: Routes = [
   { path: 'todo', component: TodoComponent },
@@ -13,6 +16,8 @@ const routes: Routes = [
   { path: 'pipes', component: PipesComponent },
   { path: 'twowaybinding', component: TwowaybindingComponent },
   { path: 'inputOutput', component: InputOutputComponent },
+  { path: 'signal', component: SignalComponent },
+  { path: 'observable', component: ObservableComponent },
   { path: '**', component: HomeComponent, pathMatch: 'full' },
 ];
 

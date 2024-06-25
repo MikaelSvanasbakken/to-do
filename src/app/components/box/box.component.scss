@@ -6,12 +6,13 @@
   display: flex;
   justify-content: center;
   width: 250px;
-  height: 250px;
+  height: 200px;
   background-color: #5b446a;
- box-shadow: #0b213f;
+  box-shadow: #0b213f;
 }
 
 .boxText {
   display: flex;
   align-self: center;
+  white-space: nowrap;
 }
